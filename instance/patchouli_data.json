@@ -1,0 +1,14 @@
+{
+  "bookGuiScale": 0,
+  "clickedVisualize": false,
+  "bookData": {
+    "feywild:feywild_lexicon": {
+      "viewedEntries": [
+        "feywild:feywild/quest",
+        "feywild:feywild/handeling_fey"
+      ],
+      "bookmarks": [],
+      "completedManualQuests": []
+    }
+  }
+}

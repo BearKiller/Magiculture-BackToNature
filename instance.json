@@ -1,0 +1,28 @@
+{
+  "_version": "1",
+  "name": "Magiculture: Back to Nature",
+  "icon": "icon.png",
+  "created_at": "2025-01-20T02:32:45.862621658Z",
+  "updated_at": "2025-01-22T03:23:03.365169954Z",
+  "last_played": "2025-01-23T00:20:40.757644618Z",
+  "seconds_played": 40241,
+  "modpack": null,
+  "game_configuration": {
+    "version": {
+      "release": "1.20.1",
+      "modloaders": [
+        {
+          "type": "Forge",
+          "version": "1.20.1-47.3.22"
+        }
+      ]
+    },
+    "global_java_args": true,
+    "memory": {
+      "min_mb": 8192,
+      "max_mb": 8192
+    }
+  },
+  "mod_sources": null,
+  "notes": ""
+}
