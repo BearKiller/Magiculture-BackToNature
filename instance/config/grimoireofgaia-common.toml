@@ -6,7 +6,7 @@
 	#All mobs are now hostile [Default: false]
 	allPassiveMobsHostile = false
 	#Hostile day mobs will no longer attack players on sight [default: false]
-	passiveHostileMobs = false
+	passiveHostileMobs = true
 	#Stop befriended mobs from despawning [Default: false]
 	friendlyPersistence = false
 
