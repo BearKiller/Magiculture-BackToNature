@@ -9,7 +9,7 @@
 	#Blocks that Quark should treat as Shulker Boxes.
 	"Shulker Boxes" = ["minecraft:white_shulker_box", "minecraft:orange_shulker_box", "minecraft:magenta_shulker_box", "minecraft:light_blue_shulker_box", "minecraft:yellow_shulker_box", "minecraft:lime_shulker_box", "minecraft:pink_shulker_box", "minecraft:gray_shulker_box", "minecraft:light_gray_shulker_box", "minecraft:cyan_shulker_box", "minecraft:purple_shulker_box", "minecraft:blue_shulker_box", "minecraft:brown_shulker_box", "minecraft:green_shulker_box", "minecraft:red_shulker_box", "minecraft:black_shulker_box"]
 	#Should Quark treat anything with 'shulker_box' in its item identifier as a shulker box?
-	"Interpret Shulker Box Like Blocks" = true
+	"Interpret Shulker Box Like Blocks" = false
 	#Set to true if you need to find the class name for a screen that's causing problems
 	"Print Screen Classnames" = false
 	#A list of screens that can accept quark's buttons. Use "Print Screen Classnames" to find the names of any others you'd want to add.
@@ -17,18 +17,18 @@
 	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
 	"Use Screen List Blacklist" = false
 	#If 'true' and TerraBlender is present, Quark will add a TerraBlender region. The region will contain vanilla biomes and the Glimmering Weald.
-	"Terrablender Add Region" = true
+	"Terrablender Add Region" = false
 	#Quark will set this weight for its TerraBlender region.
 	"Terrablender Region Weight" = 1
 	#If 'true', Quark will modify the `minecraft:overworld` MultiNoiseBiomeSourceParameterList preset, even when Terrablender is installed.
 	#This will have various knock-on effects but might make the Weald more common, or appear closer to modded biomes. Who knows?
 	"Terrablender Modify Vanilla Anyway" = false
 	#Set to false to disable the popup message telling you that you can config quark in the q menu
-	"Enable Onboarding" = true
+	"Enable Onboarding" = false
 	#The amount of slots the chest button system should seek when trying to figure out if a container should be eligible for them.
 	"Chest Button Slot Target" = 27
 	#Set this to false to not generate the Quark Programmer Art resource pack
-	"Generate Programmer Art" = true
+	"Generate Programmer Art" = false
 
 	[general.chest_button_offsets]
 		"Player X" = 0
@@ -43,24 +43,24 @@
 	building = true
 	management = true
 	tools = true
-	tweaks = true
-	world = true
-	mobs = true
+	tweaks = false
+	world = false
+	mobs = false
 	client = true
-	experimental = true
+	experimental = false
 	oddities = true
 
 [automation]
-	"Chains Connect Blocks" = true
-	Chute = true
-	Crafter = true
-	"Dispensers Place Blocks" = true
-	"Ender Watcher" = true
-	"Feeding Trough" = true
-	Gravisand = true
-	"Iron Rod" = true
-	"Metal Buttons" = true
-	"Obsidian Plate" = true
+	"Chains Connect Blocks" = false
+	Chute = false
+	Crafter = false
+	"Dispensers Place Blocks" = false
+	"Ender Watcher" = false
+	"Feeding Trough" = false
+	Gravisand = false
+	"Iron Rod" = false
+	"Metal Buttons" = false
+	"Obsidian Plate" = false
 	"Pistons Move Tile Entities" = true
 	"Redstone Randomizer" = true
 
@@ -108,36 +108,36 @@
 		"Delayed Update List" = ["minecraft:dispenser", "minecraft:dropper"]
 
 [building]
-	"Celebratory Lamps" = true
-	"Compressed Blocks" = true
-	"Duskbound Blocks" = true
-	"Framed Glass" = true
-	"Glass Item Frame" = true
-	"Gold Bars" = true
-	Grate = true
-	Hedges = true
-	"Hollow Logs" = true
-	"Industrial Palette" = true
-	"Japanese Palette" = true
-	"Leaf Carpet" = true
-	Midori = true
-	"More Brick Types" = true
-	"More Mud Blocks" = true
-	"More Potted Plants" = true
-	"Nether Brick Fence Gate" = true
-	"Rainbow Lamps" = true
-	"Raw Metal Bricks" = true
-	Rope = true
+	"Celebratory Lamps" = false
+	"Compressed Blocks" = false
+	"Duskbound Blocks" = false
+	"Framed Glass" = false
+	"Glass Item Frame" = false
+	"Gold Bars" = false
+	Grate = false
+	Hedges = false
+	"Hollow Logs" = false
+	"Industrial Palette" = false
+	"Japanese Palette" = false
+	"Leaf Carpet" = false
+	Midori = false
+	"More Brick Types" = false
+	"More Mud Blocks" = false
+	"More Potted Plants" = false
+	"Nether Brick Fence Gate" = false
+	"Rainbow Lamps" = false
+	"Raw Metal Bricks" = false
+	Rope = false
 	"Shear Vines" = true
-	Shingles = true
-	"Soul Sandstone" = true
-	Stools = true
-	"Sturdy Stone" = true
-	Thatch = true
-	"Variant Bookshelves" = true
-	"Variant Chests" = true
-	"Variant Furnaces" = true
-	"Variant Ladders" = true
+	Shingles = false
+	"Soul Sandstone" = false
+	Stools = false
+	"Sturdy Stone" = false
+	Thatch = false
+	"Variant Bookshelves" = false
+	"Variant Chests" = false
+	"Variant Furnaces" = false
+	"Variant Ladders" = false
 	"Vertical Planks" = true
 	"Vertical Slabs" = true
 	"Wooden Posts" = true
@@ -197,8 +197,8 @@
 
 	[building.leaf_carpet]
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodworks
 		# - immersive_weathering
+		# - woodworks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -237,8 +237,8 @@
 		#Allowed values: [0,1]
 		"Fall Damage Multiplier" = 0.5
 		#This feature disables itself if any of the following mods are loaded:
-		# - goated
 		# - environmental
+		# - goated
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -246,8 +246,8 @@
 	[building.variant_bookshelves]
 		"Change Names" = true
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodworks
 		# - woodster
+		# - woodworks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -266,8 +266,8 @@
 	[building.variant_ladders]
 		"Change Names" = true
 		#This feature disables itself if any of the following mods are loaded:
-		# - woodworks
 		# - woodster
+		# - woodworks
 		#This is done to prevent content overlap.
 		#You can turn this on to force the feature to be loaded even if the above mods are also loaded.
 		"Ignore Anti Overlap" = false
@@ -338,21 +338,21 @@
 		"Swap Off Hand" = true
 
 [tools]
-	Abacus = true
+	Abacus = false
 	"Ambient Discs" = true
 	"Ancient Tomes" = true
-	"Beacon Redirection" = true
-	"Bottled Cloud" = true
-	"Color Runes" = true
-	"Endermosh Music Disc" = true
-	"Parrot Eggs" = true
-	"Pathfinder Maps" = true
-	Pickarang = true
-	"Seed Pouch" = true
-	"Skull Pikes" = true
-	"Slime In A Bucket" = true
-	"Torch Arrow" = true
-	Trowel = true
+	"Beacon Redirection" = false
+	"Bottled Cloud" = false
+	"Color Runes" = false
+	"Endermosh Music Disc" = false
+	"Parrot Eggs" = false
+	"Pathfinder Maps" = false
+	Pickarang = false
+	"Seed Pouch" = false
+	"Skull Pikes" = false
+	"Slime In A Bucket" = false
+	"Torch Arrow" = false
+	Trowel = false
 
 	[tools.abacus]
 
@@ -511,48 +511,48 @@
 		"Trowel Max Durability" = 0
 
 [tweaks]
-	"Armed Armor Stands" = true
-	"Automatic Recipe Unlock" = true
-	"Better Elytra Rocket" = true
-	"Campfires Boost Elytra" = true
-	"Compasses Work Everywhere" = true
-	"Coral On Cactus" = true
-	"Diamond Repair" = true
-	"Double Door Opening" = true
-	"Dragon Scales" = true
-	"Dyeable Item Frames" = true
-	Emotes = true
-	"Enhanced Ladders" = true
-	"Glass Shard" = true
-	"Gold Tools Have Fortune" = true
-	"Grab Chickens" = true
-	"Hoe Harvesting" = true
-	"Horses Swim" = true
-	"Improved Sponges" = true
-	"Lock Rotation" = true
-	"Magma Keeps Concrete Powder" = true
-	"Map Washing" = true
-	"More Banner Layers" = true
-	"More Note Block Sounds" = true
-	"More Villagers" = true
-	"No Durability On Cosmetics" = true
-	"Pat The Dogs" = true
-	"Petals On Water" = true
-	"Pig Litters" = true
-	"Poison Potato Usage" = true
-	"Reacharound Placing" = true
-	"Renewable Spore Blossoms" = true
-	"Replace Scaffolding" = true
-	"Safer Creatures" = true
-	"Shulker Packing" = true
-	"Simple Harvest" = true
-	"Slabs To Blocks" = true
-	"Slimes To Magma Cubes" = true
-	"Snow Golem Player Heads" = true
-	"Utility Recipes" = true
-	"Vexes Die With Their Masters" = true
-	"Villagers Follow Emeralds" = true
-	"Zombie Villagers On Normal" = true
+	"Armed Armor Stands" = false
+	"Automatic Recipe Unlock" = false
+	"Better Elytra Rocket" = false
+	"Campfires Boost Elytra" = false
+	"Compasses Work Everywhere" = false
+	"Coral On Cactus" = false
+	"Diamond Repair" = false
+	"Double Door Opening" = false
+	"Dragon Scales" = false
+	"Dyeable Item Frames" = false
+	Emotes = false
+	"Enhanced Ladders" = false
+	"Glass Shard" = false
+	"Gold Tools Have Fortune" = false
+	"Grab Chickens" = false
+	"Hoe Harvesting" = false
+	"Horses Swim" = false
+	"Improved Sponges" = false
+	"Lock Rotation" = false
+	"Magma Keeps Concrete Powder" = false
+	"Map Washing" = false
+	"More Banner Layers" = false
+	"More Note Block Sounds" = false
+	"More Villagers" = false
+	"No Durability On Cosmetics" = false
+	"Pat The Dogs" = false
+	"Petals On Water" = false
+	"Pig Litters" = false
+	"Poison Potato Usage" = false
+	"Reacharound Placing" = false
+	"Renewable Spore Blossoms" = false
+	"Replace Scaffolding" = false
+	"Safer Creatures" = false
+	"Shulker Packing" = false
+	"Simple Harvest" = false
+	"Slabs To Blocks" = false
+	"Slimes To Magma Cubes" = false
+	"Snow Golem Player Heads" = false
+	"Utility Recipes" = false
+	"Vexes Die With Their Masters" = false
+	"Villagers Follow Emeralds" = false
+	"Zombie Villagers On Normal" = false
 
 	[tweaks.automatic_recipe_unlock]
 		#A list of recipe names that should NOT be added in by default
@@ -766,21 +766,21 @@
 		"Smelt Raw Ore Blocks" = true
 
 [world]
-	"Ancient Wood" = true
-	"Azalea Wood" = true
-	"Big Stone Clusters" = true
-	"Blossom Trees" = true
-	"Chorus Vegetation" = true
-	Corundum = true
-	"Fairy Rings" = true
-	"Fallen Logs" = true
-	"Glimmering Weald" = true
-	"Monster Box" = true
-	"Nether Obsidian Spikes" = true
-	"New Stone Types" = true
-	"No More Lava Pockets" = true
-	Permafrost = true
-	"Spiral Spires" = true
+	"Ancient Wood" = false
+	"Azalea Wood" = false
+	"Big Stone Clusters" = false
+	"Blossom Trees" = false
+	"Chorus Vegetation" = false
+	Corundum = false
+	"Fairy Rings" = false
+	"Fallen Logs" = false
+	"Glimmering Weald" = false
+	"Monster Box" = false
+	"Nether Obsidian Spikes" = false
+	"New Stone Types" = false
+	"No More Lava Pockets" = false
+	Permafrost = false
+	"Spiral Spires" = false
 
 	[world.ancient_wood]
 		"Ancient Fruit Gives Exp" = true
@@ -1552,21 +1552,21 @@
 					"Is Blacklist" = false
 
 [client]
-	"Auto Walk Keybind" = true
-	"Back Button Keybind" = true
-	"Buckets Show Inhabitants" = true
-	Camera = true
-	"Chest Searching" = true
-	"Elytra Indicator" = true
-	"Greener Grass" = true
-	"Improved Tooltips" = true
-	"Long Range Pick Block" = true
-	"Microcrafting Helper" = true
+	"Auto Walk Keybind" = false
+	"Back Button Keybind" = false
+	"Buckets Show Inhabitants" = false
+	Camera = false
+	"Chest Searching" = false
+	"Elytra Indicator" = false
+	"Greener Grass" = false
+	"Improved Tooltips" = false
+	"Long Range Pick Block" = false
+	"Microcrafting Helper" = false
 	"Soul Candles" = true
 	"Usage Ticker" = true
-	"Uses For Curses" = true
-	"Variant Animal Textures" = true
-	"Wool Shuts Up Minecarts" = true
+	"Uses For Curses" = false
+	"Variant Animal Textures" = false
+	"Wool Shuts Up Minecarts" = false
 
 	[client.auto_walk_keybind]
 		"Draw Hud" = true
